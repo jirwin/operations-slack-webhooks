@@ -1,0 +1,16 @@
+syntax = "proto3";
+package osiw;
+
+service Oswi {
+  rpc Post (PostRequest) returns (PostReply) {}
+}
+
+message PostRequest {
+    string hostname = 1;
+    string title = 2;
+    string text = 3;
+}
+
+message PostReply {
+
+}
