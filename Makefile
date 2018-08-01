@@ -5,4 +5,7 @@ cmd_targets = $(addprefix ./cmd/, $(CMDS))
 all:
 	go install -v $(cmd_targets)
 
-.PHONY: all
+publish:
+	scripts/publish.sh
+
+.PHONY: all publish
