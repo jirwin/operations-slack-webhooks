@@ -5,7 +5,6 @@
   name = "github.com/golang/protobuf"
   packages = [
     "proto",
-    "protoc-gen-go/descriptor",
     "ptypes",
     "ptypes/any",
     "ptypes/duration",
@@ -13,6 +12,12 @@
   ]
   revision = "b4deda0973fb4c70b50d226b1af49f3da59f5265"
   version = "v1.1.0"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/jirwin/operations-slack-webhooks"
+  packages = ["src/osiw"]
+  revision = "b5447ba03f77310d39df9f887f1b15477fffade8"
 
 [[projects]]
   name = "github.com/urfave/cli"
@@ -90,8 +95,6 @@
     "metadata",
     "naming",
     "peer",
-    "reflection",
-    "reflection/grpc_reflection_v1alpha",
     "resolver",
     "resolver/dns",
     "resolver/passthrough",
@@ -105,6 +108,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "b1d1744c3b1dc40e89bfc98271e68c44d4309c35cabbf187ad5cb34c6d236fa9"
+  inputs-digest = "6fed4d3f3a73c6445a0da10fa227274a23b08c54fb722391eda4a29f258f1cc9"
   solver-name = "gps-cdcl"
   solver-version = 1
